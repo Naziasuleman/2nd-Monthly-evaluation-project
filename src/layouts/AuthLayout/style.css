@@ -1,0 +1,21 @@
+.mw-436 {
+  max-width: 436px;
+}
+
+.carousel-indicators {
+  bottom: -75px !important;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #838799;
+}
+
+.carousel-indicators {
+  bottom: -15px !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 9px;
+  height: 9px;
+  border-radius: 100% !important;
+}/*# sourceMappingURL=style.css.map */

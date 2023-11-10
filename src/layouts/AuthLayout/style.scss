@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+.mw-436 {
+  max-width: 436px;
+}
+.carousel-indicators {
+  bottom: -75px !important;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: $gray-500;
+}
+.carousel-indicators {
+  bottom: -15px !important;
+}
+.carousel-indicators [data-bs-target] {
+  width: 9px;
+  height: 9px;
+  border-radius: 100% !important;
+}
