@@ -1,5 +1,5 @@
 import { Hellohand } from "@images";
-import { InputField } from "@components";
+import { InputField, Button } from "@components";
 import { Link } from "react-router-dom";
 
 export const Login = () => {
@@ -17,7 +17,7 @@ export const Login = () => {
         <InputField label="Password" type="password" name="Password" required />
 
         <div className="d-flex align-items-center justify-content-between mb-4">
-          <div className="fs-14">
+          <div className="fs-14 d-flex ">
             <input
               className="form-check-input"
               type="checkbox"
@@ -29,10 +29,23 @@ export const Login = () => {
               <span>Remember Me</span>
             </label>
           </div>
-          <Link to={`/forgot-password`} className="btn text-primary-500 btn-sm">
-            Forgot Password
+          <Link
+            to={`/forgot-password`}
+            className="btn text-primary-500 btn-sm "
+          >
+            Forgot Password?
           </Link>
         </div>
+        <Button
+          text="Login"
+          type="submit"
+          width="100%"
+          className="btn-primary mt-12 w-100"
+          onClick={() => {
+            // Add your logic for handling the button click here
+            console.log("Button Clicked!");
+          }}
+        />
       </form>
     </>
   );

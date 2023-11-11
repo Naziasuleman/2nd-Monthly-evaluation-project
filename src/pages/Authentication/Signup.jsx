@@ -1,5 +1,5 @@
 // Signup.jsx
-import { InputField } from "@components";
+import { InputField, Button } from "@components";
 import { Hellohand } from "@images";
 
 export const Signup = () => {
@@ -39,6 +39,16 @@ export const Signup = () => {
             </span>
           </label>
         </div>
+        <Button
+          text="Sign Up"
+          type="submit"
+          width="100%"
+          className="btn-primary mt-12 w-100"
+          onClick={() => {
+            // Add your logic for handling the button click here
+            console.log("Button Clicked!");
+          }}
+        />
       </form>
     </>
   );
