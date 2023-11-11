@@ -49,6 +49,10 @@
   color: $black;
 }
 
+.text-primary-500 {
+  color: $primary-500;
+}
+
 // text colors end
 
 // background colors
@@ -66,18 +70,21 @@
 .bg-gray-100 {
   background-color: $gray-100 !important;
 }
-// background colors end
-
+.bg-neutral-50 {
+  background-color: #f9fafc;
+}
 // font weight start
 .fw-800 {
   font-weight: 800;
 }
+.fw-500 {
+  font-weight: 500;
+}
 .fw-700 {
   font-weight: $font-weight-bold !important;
 }
-// font weight end
 
-//  font-sizes start
+//  font-sizes
 
 .fs-20 {
   font-size: 20px !important;
@@ -168,185 +175,4 @@
 
 .top-header .nav-link.active {
   font-weight: $font-weight-bold;
-}
-
-// scrollbar start
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-
-  &-track {
-    background: transparent;
-  }
-
-  &-thumb {
-    background: transparent;
-    background-color: $primary;
-    border-radius: 3px;
-  }
-}
-// scrollbar end
-
-.cursor-pointer {
-  cursor: pointer;
-}
-
-// header css
-.dropdown-toggle::after {
-  vertical-align: 0.1em;
-}
-// header css end
-
-.error-div {
-  background: #fff;
-  text-align: center;
-  padding: 24px 16px;
-  border: $border-1;
-  border-radius: 8px;
-}
-
-.hide {
-  display: none;
-}
-
-// table css added for all tables
-
-table {
-  border: 1px solid $gray-200;
-  border-radius: 10px;
-  th {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: $gray-600 !important;
-    font-weight: 600;
-    padding-top: 13px !important;
-    padding-bottom: 13px !important;
-    &:first-child {
-      padding-left: 24px;
-    }
-    &:last-child {
-      padding-right: 24px;
-    }
-  }
-  td {
-    font-size: 14px;
-    vertical-align: middle;
-    color: $black !important;
-    &:first-child {
-      padding-left: 24px;
-    }
-    &:last-child {
-      padding-right: 24px;
-    }
-  }
-}
-@media screen and (max-width: 992px) {
-  table {
-    thead {
-      display: none;
-    }
-    tr {
-      display: block;
-      margin-bottom: 0px;
-      border-bottom: 1px solid $gray-200;
-      td {
-        display: block;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        padding-bottom: 8px;
-        padding-top: 8px;
-        border: 0px !important;
-        .user-name {
-          font-weight: 600 !important;
-        }
-      }
-    }
-  }
-}
-
-// table css end
-
-.topHeaderTabs {
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: none;
-  & a {
-    color: $gray-600;
-    border-bottom: 2px solid transparent;
-    padding: 12px;
-  }
-  & a.active {
-    color: $gray-900;
-    border-bottom: 2px solid $primary-400;
-  }
-}
-
-.vertical-c-element {
-  height: calc(100vh - 93px) !important;
-}
-.min-vh-93 {
-  height: calc(100vh - 93px) !important;
-}
-.min-vh-141 {
-  min-height: calc(100vh - 141px);
-}
-.min-vh-281 {
-  min-height: calc(100vh - 281px);
-}
-.min-vh-272 {
-  min-height: calc(100vh - 272px);
-}
-.min-vh-165 {
-  min-height: calc(100vh - 165px);
-}
-.imperesnate-card {
-  position: absolute;
-  bottom: 30px;
-}
-.border-break:first-child,
-.border-break:nth-child(2) {
-  border-bottom: 1px solid $gray-200;
-}
-.border-break {
-  min-height: 200px;
-}
-img {
-  object-fit: contain;
-  object-position: center;
-}
-.PhoneInputInput {
-  border: 0;
-  outline: 0;
-}
-@media only screen and (max-width: 576px) {
-  .border-break:nth-child(2),
-  .border-break:nth-child(3) {
-    border-bottom: 1px solid $gray-200;
-  }
-}
-
-@media only screen and (min-width: 576px) {
-  .border-break:first-child,
-  .border-break:nth-child(3) {
-    border-right: 1px solid $gray-200;
-  }
-}
-
-input,
-select {
-  &:-webkit-autofill {
-    &,
-    &:hover,
-    &:focus {
-      -webkit-text-fill-color: $body-color;
-      -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-      box-shadow: 0 0 0px 1000px #fff inset;
-      transition: background-color 5000s ease-in-out 0s;
-    }
-
-    &::first-line {
-      font-family: $font-family-base;
-      font-size: $input-font-size;
-    }
-  }
 }
