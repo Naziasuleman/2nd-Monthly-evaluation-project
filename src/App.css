@@ -26598,6 +26598,10 @@ textarea.form-control-lg {
   width: 0px;
 }
 
+.eyeslash background-color {
+  filter: invert(55%) sepia(9%) saturate(539%) hue-rotate(192deg) brightness(95%) contrast(89%);
+}
+
 .form-check-input {
   margin-right: 8px;
 }

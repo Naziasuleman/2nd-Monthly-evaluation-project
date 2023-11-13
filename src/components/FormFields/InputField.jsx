@@ -1,7 +1,7 @@
 // InputField.js
 import PropTypes from "prop-types";
 import { useState } from "react";
-import { Eye, EyeSlash } from "react-bootstrap-icons";
+import { EyeSlash, Eye } from "react-bootstrap-icons";
 
 export const InputField = ({ label, type, required, name }) => {
   const [showPassword, setShowPassword] = useState(false);
@@ -27,7 +27,7 @@ export const InputField = ({ label, type, required, name }) => {
             className="input-group-text px-3 cursor-pointer bg-white border-start-0 text-gray-900"
             onClick={toggleShowPassword}
           >
-            {showPassword ? <EyeSlash /> : <Eye />}
+            {showPassword ? <Eye /> : <EyeSlash />}
           </span>
         )}
       </div>
