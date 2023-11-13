@@ -26,7 +26,7 @@ export const AuthLayout = () => {
           </div>
         </div>
         <div className="col-12 col-lg-6 d-none d-lg-block">
-          <div className="bg-gray-100 px-60 py-36 rounded-3">
+          <div className="bg-gray-100  rounded-3 px-60 py-36">
             <Carousel
               variant="dark"
               controls={false}
@@ -39,8 +39,8 @@ export const AuthLayout = () => {
                   alt={Carousel1}
                   className="img-fluid d-block mx-auto"
                 />
-                <div className="mw-357 mx-auto text-center">
-                  <h5 className="fw-700 mb-3 mt-36">Create New Trip</h5>
+                <div className=" text-center mw-357 mx-auto">
+                  <h5 className="mb-3 mt-36 fw-700 ">Create New Trip</h5>
                   <p className="text-gray-500 fs-14 pb-80">
                     Create a new trip in just few easy steps. You can go back
                     easily to edit information too.
@@ -53,8 +53,8 @@ export const AuthLayout = () => {
                   alt={Carousel2}
                   className="img-fluid d-block mx-auto"
                 />
-                <div className="mw-357 mx-auto text-center">
-                  <h5 className="fw-700 mb-3 mt-36">
+                <div className=" text-center mw-357 mx-auto">
+                  <h5 className=" mb-3 mt-36 fw-700">
                     Different Calendar Views
                   </h5>
                   <p className="text-gray-500 fs-14 pb-80">
@@ -69,8 +69,8 @@ export const AuthLayout = () => {
                   alt={Carousel3}
                   className="img-fluid d-block mx-auto"
                 />
-                <div className="mw-357 mx-auto text-center">
-                  <h5 className="fw-700 mb-3 mt-36">Tasks To be Completed</h5>
+                <div className="text-center mw-357 mx-auto ">
+                  <h5 className="mb-3 mt-36 fw-700 ">Tasks To be Completed</h5>
                   <p className="text-gray-500 fs-14 pb-80">
                     Any important information related to a trip that you
                     didn&rsquo;t complete will be turned into a task. Any

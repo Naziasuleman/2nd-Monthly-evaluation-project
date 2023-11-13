@@ -1,6 +1,5 @@
 // Button.js
 import "./style.scss";
-import PropTypes from "prop-types";
 
 export const Button = ({ text, type, onClick, className }) => {
   return (
@@ -8,11 +7,4 @@ export const Button = ({ text, type, onClick, className }) => {
       {text}
     </button>
   );
-};
-
-Button.propTypes = {
-  text: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(["button", "submit", "reset"]),
-  onClick: PropTypes.func,
-  className: PropTypes.string,
 };

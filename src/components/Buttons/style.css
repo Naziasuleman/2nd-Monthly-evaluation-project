@@ -1,0 +1,12 @@
+.w-100 {
+  width: 100%;
+}
+
+.btn-tertiary {
+  color: #bf3947;
+  background-color: transparent;
+}
+.btn-tertiary:active {
+  background-color: #bbbfcc;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

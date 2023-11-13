@@ -1,5 +1,6 @@
 // Signup.jsx
 import { InputField, Button } from "@components";
+import { Link } from "react-router-dom";
 import { Hellohand } from "@images";
 
 export const Signup = () => {
@@ -50,6 +51,12 @@ export const Signup = () => {
           }}
         />
       </form>
+      <div className="text-center mt-4">
+        <span className="text-gray-700 fs-16">Already have an account?</span>
+        <Link to="/login" className="fw-medium ">
+          {""} Login here
+        </Link>
+      </div>
     </>
   );
 };

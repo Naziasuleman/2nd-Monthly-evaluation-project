@@ -1,5 +1,6 @@
 // ForgotPassword.jsx
 import { InputField, Button } from "@components";
+import { Link } from "react-router-dom";
 
 export const ForgotPassword = () => {
   return (
@@ -22,6 +23,18 @@ export const ForgotPassword = () => {
           }}
         />
       </form>
+      <Link to="/login">
+        <Button
+          text="Back to Login"
+          type="button"
+          width="100%"
+          className="btn-tertiary btn-tertiary:active mt-20 w-100 "
+          onClick={() => {
+            // Add your logic for handling the button click here
+            console.log("Button Clicked!");
+          }}
+        />
+      </Link>
     </>
   );
 };

@@ -47,6 +47,12 @@ export const Login = () => {
           }}
         />
       </form>
+      <div className="text-center mt-4">
+        <span className="text-gray-700 fs-16">Don&rsquo;t have any?</span>
+        <Link to="/signup" className="fw-medium">
+          {""} Create a free account
+        </Link>
+      </div>
     </>
   );
 };
