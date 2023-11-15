@@ -1,23 +1,26 @@
 @import "../../styles/variables.scss";
 
+//max width
 .mw-436 {
   max-width: 436px;
 }
 
+//margin
 .mt-86 {
   margin-top: 86px;
 }
+
+//slider
 .carousel-indicators {
   bottom: -75px !important;
 }
-.carousel-dark .carousel-indicators [data-bs-target] {
-  background-color: $gray-500;
-}
-.carousel-indicators {
-  bottom: -15px !important;
-}
+
 .carousel-indicators [data-bs-target] {
   width: 9px;
   height: 9px;
   border-radius: 100% !important;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: $gray-500;
 }

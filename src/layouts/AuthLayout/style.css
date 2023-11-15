@@ -10,16 +10,12 @@
   bottom: -75px !important;
 }
 
-.carousel-dark .carousel-indicators [data-bs-target] {
-  background-color: #838799;
-}
-
-.carousel-indicators {
-  bottom: -15px !important;
-}
-
 .carousel-indicators [data-bs-target] {
   width: 9px;
   height: 9px;
   border-radius: 100% !important;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #838799;
 }/*# sourceMappingURL=style.css.map */

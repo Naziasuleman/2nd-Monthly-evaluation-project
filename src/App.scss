@@ -84,6 +84,10 @@
   font-weight: $font-weight-bold !important;
 }
 
+.fw-600 {
+  font-weight: 600;
+}
+
 //  font-sizes
 
 .fs-20 {
@@ -110,8 +114,16 @@
   font-size: 24px;
 }
 
+.fs-28 {
+  font-size: 28px;
+}
+
 // font sizes end
 
+//letter-sapcing
+.ls-2 {
+  letter-spacing: 0.32px;
+}
 // text divider start
 .separator-text {
   display: flex;
@@ -171,15 +183,7 @@
       brightness(95%) contrast(89%);
   }
 }
-.form-check-input {
-  margin-right: 8px;
-}
 
-.user-dropdown a {
-  padding-left: 8px !important;
-  padding-right: 8px !important;
-}
-
-.top-header .nav-link.active {
-  font-weight: $font-weight-bold;
+.main-content {
+  flex-grow: 1;
 }

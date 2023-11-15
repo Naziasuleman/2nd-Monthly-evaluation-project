@@ -6,7 +6,8 @@
       "@images/*": ["./src/assets/images/*"],
       "@pages/*": ["./src/pages/*"],
       "@admin/*": ["./src/pages/Admin/*"],
-      "@auth/*": ["./src/pages/Authentication/*"],
+      "@auth/*": ["src/pages/Authentication/*"],
+      "@user/*": ["./src/pages/User/*"],
       "@layouts/*": ["./src/layouts/*"]
     }
   },

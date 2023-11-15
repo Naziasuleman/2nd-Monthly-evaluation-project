@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import { Logo, Carousel1, Carousel2, Carousel3 } from "@images";
+import { Logo, Image1, Image2, Image3 } from "@images";
 import Carousel from "react-bootstrap/Carousel";
 import "./style.scss";
 
@@ -26,7 +26,7 @@ export const AuthLayout = () => {
           </div>
         </div>
         <div className="col-12 col-lg-6 d-none d-lg-block">
-          <div className="bg-gray-100  rounded-3 px-60 py-36">
+          <div className="bg-gray-100 rounded-3 px-60 py-36">
             <Carousel
               variant="dark"
               controls={false}
@@ -35,8 +35,8 @@ export const AuthLayout = () => {
             >
               <Carousel.Item>
                 <img
-                  src={Carousel1}
-                  alt={Carousel1}
+                  src={Image1}
+                  alt="image1"
                   className="img-fluid d-block mx-auto"
                 />
                 <div className=" text-center mw-357 mx-auto">
@@ -49,8 +49,8 @@ export const AuthLayout = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                  src={Carousel2}
-                  alt={Carousel2}
+                  src={Image2}
+                  alt="image2"
                   className="img-fluid d-block mx-auto"
                 />
                 <div className=" text-center mw-357 mx-auto">
@@ -65,8 +65,8 @@ export const AuthLayout = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                  src={Carousel3}
-                  alt={Carousel3}
+                  src={Image3}
+                  alt="image3"
                   className="img-fluid d-block mx-auto"
                 />
                 <div className="text-center mw-357 mx-auto ">

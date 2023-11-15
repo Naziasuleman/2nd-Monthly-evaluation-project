@@ -26527,6 +26527,10 @@ textarea.form-control-lg {
   font-weight: 700 !important;
 }
 
+.fw-600 {
+  font-weight: 600;
+}
+
 .fs-20 {
   font-size: 20px !important;
 }
@@ -26549,6 +26553,14 @@ textarea.form-control-lg {
 
 .fs-24 {
   font-size: 24px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.ls-2 {
+  letter-spacing: 0.32px;
 }
 
 .separator-text {
@@ -26602,15 +26614,6 @@ textarea.form-control-lg {
   filter: invert(55%) sepia(9%) saturate(539%) hue-rotate(192deg) brightness(95%) contrast(89%);
 }
 
-.form-check-input {
-  margin-right: 8px;
-}
-
-.user-dropdown a {
-  padding-left: 8px !important;
-  padding-right: 8px !important;
-}
-
-.top-header .nav-link.active {
-  font-weight: 700;
+.main-content {
+  flex-grow: 1;
 }/*# sourceMappingURL=App.css.map */
