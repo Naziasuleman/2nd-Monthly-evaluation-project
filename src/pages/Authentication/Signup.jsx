@@ -13,14 +13,43 @@ export const Signup = () => {
         Please enter the following information to create an account.
       </p>
       <form>
-        <InputField label="Full Name" type="text" name="Full Name" required />
-        <InputField label="Email" type="email" name="Email" required />
-        <InputField label="Phone Number" type="text" name="Phone Number" />
-        <InputField label="Password" type="password" name="Password" required />
+        <InputField
+          label="Full Name"
+          type="text"
+          name="Full Name"
+          defaultValue=""
+          disabled={false}
+          required
+        />
+        <InputField
+          label="Email"
+          type="email"
+          name="Email"
+          defaultValue=""
+          disabled={false}
+          required
+        />
+        <InputField
+          label="Phone Number"
+          type="text"
+          name="Phone Number"
+          defaultValue=""
+          disabled={false}
+        />
+        <InputField
+          label="Password"
+          type="password"
+          name="Password"
+          defaultValue=""
+          disabled={false}
+          required
+        />
         <InputField
           label="Confirm Password"
           type="password"
           name="Confirm Password"
+          defaultValue=""
+          disabled={false}
           required
         />
         <div className="mb-4 fs-14">
@@ -53,7 +82,7 @@ export const Signup = () => {
       </form>
       <div className="text-center mt-4">
         <span className="text-gray-700 fs-16">Already have an account?</span>
-        <Link to="/login" className="fw-medium ">
+        <Link to="/login" className="fw-medium text-primary-500">
           {""} Login here
         </Link>
       </div>

@@ -3,7 +3,14 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import { EyeSlash, Eye } from "react-bootstrap-icons";
 
-export const InputField = ({ label, type, required, name }) => {
+export const InputField = ({
+  label,
+  type,
+  required,
+  name,
+  defaultValue,
+  disabled,
+}) => {
   const [showPassword, setShowPassword] = useState(false);
 
   const toggleShowPassword = () => {
@@ -21,6 +28,8 @@ export const InputField = ({ label, type, required, name }) => {
           className="form-control"
           required={required}
           name={name}
+          defaultValue={defaultValue}
+          disabled={disabled}
         />
         {type === "password" && (
           <span
@@ -40,4 +49,6 @@ InputField.propTypes = {
   type: PropTypes.oneOfType([PropTypes.string, PropTypes.undefined]).isRequired,
   required: PropTypes.bool,
   name: PropTypes.string,
+  defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  disabled: PropTypes.bool,
 };

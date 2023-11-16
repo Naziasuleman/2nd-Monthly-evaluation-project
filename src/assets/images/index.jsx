@@ -16,3 +16,4 @@ export { default as Trips } from "./trips.svg";
 export { default as Settings } from "./settings.svg";
 export { default as FooterIcon } from "./footer-icon.svg";
 export { default as UserImage } from "./user-image.png";
+export { default as LoudSpeaker } from "./loudspeaker.svg";

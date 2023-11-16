@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   Logo,
   Hamburg,
@@ -74,19 +74,23 @@ export const SideBar = () => {
             OVERVIEW
           </p>
           {sidebarData.map((item) => (
-            <li
+            <NavLink
+              id="navlink"
               key={item.id}
+              to={`/${item.text}`}
               className={`d-flex hover ${
                 collapsed ? "justify-content-center" : "align-items-center"
               }`}
+              activeClassName="sidebar-active"
             >
               <img src={item.icon} alt={item.text} />
               <span
+                id="sidebar-active"
                 className={`${collapsed ? "d-none" : "d-inline"} fs-16 fw-500`}
               >
                 {item.text}
               </span>
-            </li>
+            </NavLink>
           ))}
         </div>
 
@@ -98,12 +102,15 @@ export const SideBar = () => {
           >
             ADD RESOURCES
           </p>
-          {companiesData.map((item) => (
-            <li
+          {/* {companiesData.map((item) => (
+            <NavLink
+              id="navlink"
               key={item.id}
+              to={`/${item.text}`} // Assuming you have a property like 'slug'
               className={`d-flex hover ${
                 collapsed ? "justify-content-center" : "align-items-center"
               }`}
+              activeClassName="sidebar-active"
             >
               <img src={item.icon} alt={item.text} />
               <span
@@ -111,7 +118,26 @@ export const SideBar = () => {
               >
                 {item.text}
               </span>
-            </li>
+            </NavLink>
+          ))} */}
+          {companiesData.map((item) => (
+            <NavLink
+              id="navlink"
+              key={item.id}
+              to={`/${item.text}`}
+              className={`d-flex hover ${
+                collapsed ? "justify-content-center" : "align-items-center"
+              }`}
+              activeClassName="sidebar-active"
+            >
+              <img src={item.icon} alt={item.text} />
+              <span
+                id="sidebar-active"
+                className={`${collapsed ? "d-none" : "d-inline"} fs-16 fw-500`}
+              >
+                {item.text}
+              </span>
+            </NavLink>
           ))}
         </div>
         <div className="list-item  d-flex flex-column gap-4 mt-20 ls-2">
@@ -123,19 +149,23 @@ export const SideBar = () => {
             USERS
           </p>
           {settingsData.map((item) => (
-            <li
+            <NavLink
+              id="navlink"
               key={item.id}
+              to={`/${item.text}`}
               className={`d-flex hover ${
-                collapsed ? "justify-content-center" : "align-items-center "
+                collapsed ? "justify-content-center" : "align-items-center"
               }`}
+              activeClassName="sidebar-active"
             >
               <img src={item.icon} alt={item.text} />
               <span
-                className={`${collapsed ? "d-none" : "d-inline"} fs-16 fw-500 `}
+                id="sidebar-active"
+                className={`${collapsed ? "d-none" : "d-inline"} fs-16 fw-500`}
               >
                 {item.text}
               </span>
-            </li>
+            </NavLink>
           ))}
         </div>
       </div>

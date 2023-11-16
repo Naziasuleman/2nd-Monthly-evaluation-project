@@ -12,6 +12,7 @@ import {
   AdminLogin,
 } from "@pages/Authentication";
 import { Dashboard } from "@pages/User";
+import { Settings, Account, Password } from "@pages/Settings";
 
 export const App = () => {
   const isAuthenticated = false;
@@ -33,8 +34,12 @@ export const App = () => {
         ) : (
           <>
             <Route element={<UserLayout />}>
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/" element={<Dashboard />} />
+              <Route index path="/dashboard" element={<Dashboard />} />
+              <Route path="/settings/*" element={<Settings />}>
+                <Route path="account" element={<Account />} />
+                <Route path="changepassword" element={<Password />} />
+                <Route path="*" element={<Navigate to="account" />} />
+              </Route>
             </Route>
           </>
         )}

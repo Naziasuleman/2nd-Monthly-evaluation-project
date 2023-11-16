@@ -23,11 +23,20 @@ export const AdminLogin = () => {
               Please login in order to proceed.
             </p>
             <form>
-              <InputField label="Email" type="email" name="Email" required />
+              <InputField
+                label="Email"
+                type="email"
+                name="Email"
+                defaultValue=""
+                disabled={false}
+                required
+              />
               <InputField
                 label="Password"
                 type="password"
                 name="Password"
+                defaultValue=""
+                disabled={false}
                 required
               />
 
@@ -38,6 +47,8 @@ export const AdminLogin = () => {
                     type="checkbox"
                     value=""
                     id="invalidCheck2"
+                    defaultValue=""
+                    disabled={false}
                     required
                   />
                   <label className="form-check-label">
