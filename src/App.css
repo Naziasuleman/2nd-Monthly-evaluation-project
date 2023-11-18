@@ -8897,6 +8897,10 @@ textarea.form-control-lg {
   width: 25% !important;
 }
 
+.w-40 {
+  width: 40% !important;
+}
+
 .w-50 {
   width: 50% !important;
 }
@@ -26451,10 +26455,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.label-small {
-  margin-bottom: 8px !important;
-}
-
 .text-gray-100 {
   color: #edeef2;
 }
@@ -26495,6 +26495,10 @@ textarea.form-control-lg {
   color: #bf3947;
 }
 
+.label-small {
+  margin-bottom: 8px !important;
+}
+
 .bg-primary-100 {
   background-color: #efc9cd;
 }
@@ -26515,6 +26519,10 @@ textarea.form-control-lg {
   background-color: #f9fafc;
 }
 
+.bg-gray-200 {
+  background-color: #dcdee6;
+}
+
 .fw-800 {
   font-weight: 800;
 }
@@ -26523,12 +26531,12 @@ textarea.form-control-lg {
   font-weight: 500;
 }
 
-.fw-700 {
-  font-weight: 700 !important;
-}
-
 .fw-600 {
   font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
 }
 
 .fs-20 {
@@ -26561,25 +26569,6 @@ textarea.form-control-lg {
 
 .ls-2 {
   letter-spacing: 0.32px;
-}
-
-.separator-text {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 14px;
-  color: #838799;
-}
-.separator-text::before, .separator-text::after {
-  content: "";
-  flex: 1;
-  border-bottom: 1px solid #dcdee6;
-}
-.separator-text:not(:empty)::before {
-  margin-right: 6px;
-}
-.separator-text:not(:empty)::after {
-  margin-left: 6px;
 }
 
 .mw-460 {
@@ -26616,4 +26605,36 @@ textarea.form-control-lg {
 
 .main-content {
   flex-grow: 1;
+}
+
+.table {
+  margin: 0px !important;
+  border-radius: 10px;
+}
+.table thead tr th {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  font-size: 12px;
+  background-color: #fbf2f3;
+  text-transform: uppercase;
+  color: #6b6f80 !important;
+  font-weight: 600;
+}
+.table thead tr :first-child {
+  padding-left: 24px;
+}
+.table thead tr :last-child {
+  padding-right: 24px;
+}
+.table thead tr td {
+  font-size: 14px;
+  vertical-align: middle;
+  color: #000 !important;
+  font-weight: 400;
+}
+.table thead tr td:first-child {
+  padding-left: 24px;
+}
+.table thead tr td:last-child {
+  padding-right: 24px;
 }/*# sourceMappingURL=App.css.map */

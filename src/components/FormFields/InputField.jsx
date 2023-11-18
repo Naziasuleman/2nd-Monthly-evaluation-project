@@ -10,6 +10,9 @@ export const InputField = ({
   name,
   defaultValue,
   disabled,
+  iconImage,
+  placeholder,
+  inputGroupSize, // Add inputGroupSize prop
 }) => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -18,16 +21,26 @@ export const InputField = ({
   };
 
   return (
-    <div className="input-group-lg mb-12">
+    <div
+      className={`input-group${inputGroupSize ? `-${inputGroupSize}` : ""} `}
+    >
       <label className="mb-12 form-label">
         {label} {required ? "*" : ""}
       </label>
       <div className="input-group">
+        {iconImage && (
+          <span className="input-group-text bg-white border border-end-0 text-gray-900">
+            <img src={iconImage} alt="icon" className="icon-image" />
+          </span>
+        )}
         <input
           type={showPassword ? "text" : type}
-          className="form-control"
+          className={`form-control ${
+            iconImage ? "border border-start-0" : ""
+          } `}
           required={required}
           name={name}
+          placeholder={placeholder}
           defaultValue={defaultValue}
           disabled={disabled}
         />
@@ -51,4 +64,7 @@ InputField.propTypes = {
   name: PropTypes.string,
   defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   disabled: PropTypes.bool,
+  iconImage: PropTypes.string,
+  inputGroupSize: PropTypes.string,
+  placeholder: PropTypes.string, // Define prop type for inputGroupSize
 };

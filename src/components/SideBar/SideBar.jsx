@@ -9,7 +9,7 @@ import {
   Plus,
 } from "@images";
 import { Button } from "@components";
-import "../style.scss";
+import "../components.scss";
 import { sidebarData, companiesData, settingsData } from "./SidebarData";
 
 export const SideBar = () => {
@@ -57,7 +57,6 @@ export const SideBar = () => {
         <Button
           text={`${collapsed ? "" : "Create Trip"}`}
           type="button"
-          width="100%"
           iconSrc={Plus}
           className="btn-primary mt-12 w-100 mb-32"
           onClick={() => {
@@ -81,7 +80,7 @@ export const SideBar = () => {
               className={`d-flex hover ${
                 collapsed ? "justify-content-center" : "align-items-center"
               }`}
-              activeClassName="sidebar-active"
+              activeclassname="sidebar-active"
             >
               <img src={item.icon} alt={item.text} />
               <span
@@ -102,24 +101,7 @@ export const SideBar = () => {
           >
             ADD RESOURCES
           </p>
-          {/* {companiesData.map((item) => (
-            <NavLink
-              id="navlink"
-              key={item.id}
-              to={`/${item.text}`} // Assuming you have a property like 'slug'
-              className={`d-flex hover ${
-                collapsed ? "justify-content-center" : "align-items-center"
-              }`}
-              activeClassName="sidebar-active"
-            >
-              <img src={item.icon} alt={item.text} />
-              <span
-                className={`${collapsed ? "d-none" : "d-inline"} fs-16 fw-500`}
-              >
-                {item.text}
-              </span>
-            </NavLink>
-          ))} */}
+
           {companiesData.map((item) => (
             <NavLink
               id="navlink"
@@ -128,7 +110,7 @@ export const SideBar = () => {
               className={`d-flex hover ${
                 collapsed ? "justify-content-center" : "align-items-center"
               }`}
-              activeClassName="sidebar-active"
+              activeclassname="sidebar-active"
             >
               <img src={item.icon} alt={item.text} />
               <span
@@ -156,7 +138,7 @@ export const SideBar = () => {
               className={`d-flex hover ${
                 collapsed ? "justify-content-center" : "align-items-center"
               }`}
-              activeClassName="sidebar-active"
+              activeclassname="sidebar-active"
             >
               <img src={item.icon} alt={item.text} />
               <span

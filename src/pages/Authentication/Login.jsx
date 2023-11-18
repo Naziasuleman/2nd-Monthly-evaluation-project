@@ -18,6 +18,7 @@ export const Login = () => {
           type="email"
           name="Email"
           defaultValue=""
+          className="mb-12"
           disabled={false}
           required
         />
@@ -31,7 +32,7 @@ export const Login = () => {
         />
 
         <div className="d-flex align-items-center justify-content-between mb-4">
-          <div className="fs-14 d-flex ">
+          <div className="fs-14 d-flex gap-2">
             <input
               className="form-check-input"
               type="checkbox"

@@ -1,6 +1,5 @@
 // Button.js
-import React from "react";
-import "./style.scss";
+import "./buttons.scss";
 
 export const Button = ({
   text,

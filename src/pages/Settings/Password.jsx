@@ -6,8 +6,7 @@ export const Password = () => {
         <div className="card-body">
           <h5 className="text-gray-900 fw-bold mb-28 px-4 mt-5">Password</h5>
           <form>
-            <div className="d-flex gap-4 ">
-              <div className="text-center"></div>
+            <div className="d-flex gap-4 px-4">
               <div className="w-100 mw-460">
                 <InputField
                   label="Current Password"

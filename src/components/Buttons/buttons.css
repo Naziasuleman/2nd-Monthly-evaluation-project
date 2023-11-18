@@ -1,0 +1,27 @@
+.w-100 {
+  width: 100%;
+}
+
+.btn-tertiary {
+  color: #bf3947;
+  background-color: transparent;
+}
+.btn-tertiary:active {
+  background-color: #bbbfcc;
+  border: none;
+}
+.btn-seconday {
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  border: 1px solid #dcdee6;
+  font-weight: 500;
+}
+.btn-seconday:hover {
+  color: #bf3947;
+  border: 1px solid #bf3947;
+  background-color: #fff;
+}
+.btn-seconday:active {
+  background-color: #fff;
+}/*# sourceMappingURL=buttons.css.map */

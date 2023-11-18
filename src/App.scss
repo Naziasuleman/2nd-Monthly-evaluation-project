@@ -1,17 +1,6 @@
 @import "./styles/variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// form labels start
-.label-small {
-  @extend .form-label;
-  @extend .fs-14;
-  margin-bottom: 8px !important;
-}
-.label-large {
-  @extend .form-label;
-  @extend .fs-18;
-}
-
 // text colors start
 .text-gray-100 {
   color: $gray-100;
@@ -52,7 +41,16 @@
   color: $primary-500;
 }
 
-// text colors end
+// form labels start
+.label-small {
+  @extend .form-label;
+  @extend .fs-14;
+  margin-bottom: 8px !important;
+}
+.label-large {
+  @extend .form-label;
+  @extend .fs-18;
+}
 
 // background colors
 .bg-primary-100 {
@@ -72,23 +70,24 @@
 .bg-neutral-50 {
   background-color: #f9fafc;
 }
-// font weight start
+.bg-gray-200 {
+  background-color: $gray-200;
+}
+// font weight
 .fw-800 {
   font-weight: 800;
 }
 .fw-500 {
   font-weight: 500;
 }
+.fw-600 {
+  font-weight: 600;
+}
 .fw-700 {
   font-weight: $font-weight-bold !important;
 }
 
-.fw-600 {
-  font-weight: 600;
-}
-
 //  font-sizes
-
 .fs-20 {
   font-size: 20px !important;
 }
@@ -117,37 +116,10 @@
   font-size: 28px;
 }
 
-// font sizes end
-
 //letter-sapcing
 .ls-2 {
   letter-spacing: 0.32px;
 }
-// text divider start
-.separator-text {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 14px;
-  color: $gray-500;
-
-  &::before,
-  &::after {
-    content: "";
-    flex: 1;
-    border-bottom: $border-1;
-  }
-
-  &:not(:empty)::before {
-    margin-right: 6px;
-  }
-
-  &:not(:empty)::after {
-    margin-left: 6px;
-  }
-}
-
-// text-divider end
 
 // width start
 .mw-460 {
@@ -173,7 +145,6 @@
 .w-0 {
   width: 0px;
 }
-// width end
 
 //image color changer
 .eyeslash {
@@ -185,4 +156,41 @@
 
 .main-content {
   flex-grow: 1;
+}
+
+.table {
+  margin: 0px !important;
+  border-radius: 10px;
+  thead {
+    tr {
+      th {
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+        font-size: 12px;
+        background-color: $primary-50;
+        text-transform: uppercase;
+        color: $gray-600 !important;
+        font-weight: 600;
+      }
+      & :first-child {
+        padding-left: 24px;
+      }
+      & :last-child {
+        padding-right: 24px;
+      }
+
+      td {
+        font-size: 14px;
+        vertical-align: middle;
+        color: $black !important;
+        font-weight: 400;
+        &:first-child {
+          padding-left: 24px;
+        }
+        &:last-child {
+          padding-right: 24px;
+        }
+      }
+    }
+  }
 }

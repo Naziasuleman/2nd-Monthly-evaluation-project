@@ -18,6 +18,11 @@
   margin-top: 20px;
 }
 
+.py-13 {
+  padding-top: 24px;
+  padding-bottom: 0px;
+}
+
 .sidebar {
   flex-direction: column;
   flex-shrink: 0;
@@ -26,6 +31,7 @@
   border-right: 1px solid #dcdee6;
   background-color: #fff;
   max-height: 100vh;
+  justify-content: space-between;
 }
 .sidebar.side-animation {
   transition: 0.3s;
@@ -48,22 +54,40 @@
   margin-left: 0px;
 }
 
+.w-45 {
+  width: 45%;
+}
+
 .main-content {
   transition: all 0.5s;
 }
 
-li {
+#navlink {
   padding: 8px 20px;
   border-radius: 12px;
 }
-li:hover {
+#navlink:hover {
   background-color: #edeef2;
 }
-li:active {
+
+a.active {
+  background-color: #fbf2f3;
+}
+a.active img {
+  filter: invert(30%) sepia(23%) saturate(4600%) hue-rotate(326deg) brightness(88%) contrast(88%);
+}
+a.active #sidebar-active {
   color: #bf3947;
 }
-li:active img {
-  filter: invert(30%) sepia(23%) saturate(4600%) hue-rotate(326deg) brightness(88%) contrast(88%);
+
+a {
+  color: #6b6f80;
+}
+
+a.active #tab {
+  color: #292b33;
+  border-bottom: 2px solid #bf3947;
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 992px) {
@@ -73,4 +97,4 @@ li:active img {
   .sidebar.expand {
     width: 260px;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=components.css.map */

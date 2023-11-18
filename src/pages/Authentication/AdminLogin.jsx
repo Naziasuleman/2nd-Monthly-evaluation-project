@@ -36,6 +36,7 @@ export const AdminLogin = () => {
                 type="password"
                 name="Password"
                 defaultValue=""
+                className="mt-12"
                 disabled={false}
                 required
               />

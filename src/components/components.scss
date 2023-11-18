@@ -58,6 +58,10 @@
   margin-left: 0px;
 }
 
+.w-45 {
+  width: 45%;
+}
+
 .main-content {
   transition: all 0.5s;
 }
@@ -90,6 +94,7 @@ a {
 a.active #tab {
   color: $gray-900;
   border-bottom: 2px solid $primary-500;
+  background-color: $white;
 }
 
 @media only screen and (min-width: 992px) {

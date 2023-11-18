@@ -52,7 +52,7 @@ export const Signup = () => {
           disabled={false}
           required
         />
-        <div className="mb-4 fs-14">
+        <div className="mb-4 fs-14 d-flex gap-2">
           <input
             className="form-check-input"
             type="checkbox"
@@ -60,10 +60,14 @@ export const Signup = () => {
             id="invalidCheck2"
             required
           />
-          <label className="form-check-label ">
+          <label className="form-check-label">
             <span>
               I agree to the{" "}
-              <a href="/termsconditions" target="_blank">
+              <a
+                className="text-primary-500"
+                href="/termsconditions"
+                target="_blank"
+              >
                 terms and conditions
               </a>
             </span>

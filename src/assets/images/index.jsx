@@ -17,3 +17,5 @@ export { default as Settings } from "./settings.svg";
 export { default as FooterIcon } from "./footer-icon.svg";
 export { default as UserImage } from "./user-image.png";
 export { default as LoudSpeaker } from "./loudspeaker.svg";
+export { default as Avatars } from "./avatars.png";
+export { default as Search } from "./Search.svg";
