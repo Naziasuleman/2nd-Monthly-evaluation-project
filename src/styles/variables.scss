@@ -7,6 +7,7 @@
 
 // // scss-docs-start gray-color-variables
 $white: #fff !default;
+$gray-white: #f9fafc;
 $gray-50: #f6f7f9 !default;
 $gray-100: #edeef2 !default;
 $gray-200: #dcdee6 !default;
@@ -737,10 +738,10 @@ $headings-line-height: 1.3 !default;
 // // Customizes the `.table` component with basic values, each used across all table variations.
 
 // // scss-docs-start table-variables
-// $table-cell-padding-y:        .5rem !default;
-// $table-cell-padding-x:        .5rem !default;
-// $table-cell-padding-y-sm:     .25rem !default;
-// $table-cell-padding-x-sm:     .25rem !default;
+$table-cell-padding-y: 0.5rem !default;
+$table-cell-padding-x: 0.5rem !default;
+$table-cell-padding-y-sm: 0.25rem !default;
+$table-cell-padding-x-sm: 0.25rem !default;
 
 // $table-cell-vertical-align:   top !default;
 
@@ -748,7 +749,7 @@ $headings-line-height: 1.3 !default;
 // $table-bg:                    transparent !default;
 // $table-accent-bg:             transparent !default;
 
-// $table-th-font-weight:        null !default;
+$table-th-font-weight: 600 !default;
 
 // $table-striped-color:         $table-color !default;
 // $table-striped-bg-factor:     .05 !default;

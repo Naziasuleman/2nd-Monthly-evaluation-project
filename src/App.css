@@ -430,6 +430,7 @@ caption {
 }
 
 th {
+  font-weight: 600;
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
@@ -26611,30 +26612,53 @@ textarea.form-control-lg {
   margin: 0px !important;
   border-radius: 10px;
 }
-.table thead tr th {
+.table tr th {
   padding-top: 12px !important;
   padding-bottom: 12px !important;
   font-size: 12px;
-  background-color: #fbf2f3;
+  background-color: #f9fafc;
   text-transform: uppercase;
   color: #6b6f80 !important;
   font-weight: 600;
+  letter-spacing: 0.72px;
 }
-.table thead tr :first-child {
-  padding-left: 24px;
+.table tr th:first-child {
+  padding-left: 80px;
 }
-.table thead tr :last-child {
+.table tr th:last-child {
   padding-right: 24px;
 }
-.table thead tr td {
+.table tr td {
   font-size: 14px;
   vertical-align: middle;
   color: #000 !important;
   font-weight: 400;
 }
-.table thead tr td:first-child {
+.table tr td:first-child {
   padding-left: 24px;
 }
-.table thead tr td:last-child {
+.table tr td:last-child {
   padding-right: 24px;
+}
+
+@media screen and (max-width: 1022px) {
+  .table-div {
+    border: none;
+    margin: 0px !important;
+    border-radius: 0px !important;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    display: block;
+    border-bottom: 1px solid #dcdee6;
+  }
+  table tr .company-name {
+    font-weight: 600 !important;
+  }
+  table tr td {
+    display: block;
+    border: 0px !important;
+  }
 }/*# sourceMappingURL=App.css.map */

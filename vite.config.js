@@ -15,6 +15,8 @@ export default defineConfig({
       "@admin": path.resolve(__dirname, "src/pages/Admin/"),
       "@auth": path.resolve(__dirname, "src/pages/Authentication/"),
       "@user": path.resolve(__dirname, "src/pages/User/"),
+      "@settings": path.resolve(__dirname, "src/pages/Settings/"),
+      "@companies": path.resolve(__dirname, "src/pages/Companies/"),
       "@layouts": path.resolve(__dirname, "src/layouts/"),
     },
   },

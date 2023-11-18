@@ -8,6 +8,8 @@
       "@admin/*": ["./src/pages/Admin/*"],
       "@auth/*": ["src/pages/Authentication/*"],
       "@user/*": ["./src/pages/User/*"],
+      "@settings/*": ["./src/pages/Settings/*"],
+      "@companies/*": ["./src/pages/Companies/*"],
       "@layouts/*": ["./src/layouts/*"]
     }
   },
