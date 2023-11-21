@@ -26496,6 +26496,10 @@ textarea.form-control-lg {
   color: #bf3947;
 }
 
+.text-success-500 {
+  color: #008042;
+}
+
 .label-small {
   margin-bottom: 8px !important;
 }
@@ -26522,6 +26526,14 @@ textarea.form-control-lg {
 
 .bg-gray-200 {
   background-color: #dcdee6;
+}
+
+.bg-gray-white {
+  background-color: #f9fafc;
+}
+
+.bg-success-50 {
+  background-color: #e6fff3;
 }
 
 .fw-800 {
@@ -26558,6 +26570,10 @@ textarea.form-control-lg {
 
 .fs-10 {
   font-size: 10px;
+}
+
+.fs-23 {
+  font-size: 23px;
 }
 
 .fs-24 {
@@ -26600,6 +26616,18 @@ textarea.form-control-lg {
   width: 0px;
 }
 
+.w-50 {
+  width: 50px;
+}
+
+.h-40 {
+  height: 48px;
+}
+
+.h-180 {
+  height: 180px;
+}
+
 .eyeslash background-color {
   filter: invert(55%) sepia(9%) saturate(539%) hue-rotate(192deg) brightness(95%) contrast(89%);
 }
@@ -26611,6 +26639,9 @@ textarea.form-control-lg {
 .table {
   margin: 0px !important;
   border-radius: 10px;
+}
+.table tr {
+  border: 1px solid #dcdee6;
 }
 .table tr th {
   padding-top: 12px !important;
@@ -26641,24 +26672,27 @@ textarea.form-control-lg {
   padding-right: 24px;
 }
 
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 992px) {
   .table-div {
-    border: none;
     margin: 0px !important;
     border-radius: 0px !important;
+    border: none !important;
+  }
+  table {
+    border: none !important;
   }
   table thead {
     display: none;
   }
-  table tr {
-    display: block;
-    border-bottom: 1px solid #dcdee6;
-  }
   table tr .company-name {
     font-weight: 600 !important;
   }
+  table tr .data {
+    padding-top: 0px !important;
+    padding-left: 90px !important;
+  }
   table tr td {
     display: block;
-    border: 0px !important;
+    border: none !important;
   }
 }/*# sourceMappingURL=App.css.map */

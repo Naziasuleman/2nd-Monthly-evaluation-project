@@ -34,13 +34,13 @@ export const AddCompany = () => {
       >
         <div>
           <div className="row px-4 py-4 gap-32 border border-top-0 border-start-0 border-end-0 border-bottom">
-            <div className="col-12 col-xl-3 d-flex flex-column gap-2">
+            <div className="col-12 col-lg-3 d-flex flex-column gap-2">
               <h5 className="text-gray-900 fw-600 fs-18">Company Details</h5>
               <p className="fs-14 text-gray-500 fw-400">
                 Add company details to be used while creating trip
               </p>
             </div>
-            <div className="col-12 col-xl-7  d-flex flex-column gap-3">
+            <div className="col-12 col-lg-7  d-flex flex-column gap-3">
               <div className="d-flex flex-column flex-sm-row gap-12 align-items-center">
                 <div>
                   <img src={UploadLogo} alt="alt" />
@@ -100,13 +100,13 @@ export const AddCompany = () => {
             </div>
           </div>
           <div className="row px-4 py-4 d-flex gap-32 border border-top-0 border-start-0 border-end-0 border-bottom">
-            <div className="col-12 col-xl-3 d-flex flex-column gap-2">
+            <div className="col-12 col-lg-3 d-flex flex-column gap-2">
               <h5 className="text-gray-900 fw-600 fs-18">Billing Details</h5>
               <p className="fs-14 text-gray-500 fw-400">
                 Choose a billing contact to recieve
               </p>
             </div>
-            <div className="col-12 col-xl-7  d-flex flex-column gap-3">
+            <div className="col-12 col-lg-7  d-flex flex-column gap-3">
               <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3">
                 <InputField
                   label="Contact Name"
@@ -149,7 +149,7 @@ export const AddCompany = () => {
             </div>
           </div>
           <div className="row px-4 py-4 d-flex gap-32 ">
-            <div className="col-12 col-xl-3  d-flex flex-column gap-2">
+            <div className="col-12 col-lg-3  d-flex flex-column gap-2">
               <h5 className="text-gray-900 fw-600 fs-18">Addresses</h5>
               <p className="fs-14 text-gray-500 fw-400">
                 List down waypoints to be used while creating trip

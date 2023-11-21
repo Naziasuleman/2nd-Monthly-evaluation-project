@@ -60,6 +60,9 @@
 
 .main-content {
   transition: all 0.5s;
+  max-height: 100vh;
+  min-height: 100vh;
+  overflow: auto;
 }
 
 #navlink {

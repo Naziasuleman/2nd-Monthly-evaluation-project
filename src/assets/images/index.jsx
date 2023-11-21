@@ -28,3 +28,4 @@ export { default as Delete } from "./delete.svg";
 export { default as View } from "./view.svg";
 export { default as Back } from "./back.svg";
 export { default as UploadLogo } from "./uploadlogo.png";
+export { default as Arrowup } from "./uparrow.svg";

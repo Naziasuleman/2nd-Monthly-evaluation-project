@@ -2,6 +2,14 @@
   width: 100%;
 }
 
+.w-80 {
+  width: 80%;
+}
+
+.h-50 {
+  height: 54px;
+}
+
 .btn-tertiary {
   color: #bf3947;
   background-color: transparent;
@@ -23,5 +31,20 @@
   background-color: #fff;
 }
 .btn-seconday:active {
+  background-color: #fff;
+}
+.btn-secondary {
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  border: 1px solid #dcdee6;
+  font-weight: 500;
+}
+.btn-secondary:hover {
+  color: #bf3947;
+  border: 1px solid #bf3947;
+  background-color: #fff;
+}
+.btn-secondary:active {
   background-color: #fff;
 }/*# sourceMappingURL=buttons.css.map */
