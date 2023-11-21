@@ -37,7 +37,7 @@ export const Header = ({ title }) => {
                 <Button
                   text="Add New"
                   type="button"
-                  className="btn-primary w-30 d-flex gap-1"
+                  className="btn-primary w-30 d-flex gap-1 mt-20"
                   iconSrc={Plus}
                 />
               </Link>

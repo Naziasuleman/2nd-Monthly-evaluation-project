@@ -12,7 +12,8 @@ export const InputField = ({
   disabled,
   iconImage,
   placeholder,
-  inputGroupSize, // Add inputGroupSize prop
+
+  // Add inputGroupSize prop
 }) => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -21,9 +22,7 @@ export const InputField = ({
   };
 
   return (
-    <div
-      className={`input-group${inputGroupSize ? `-${inputGroupSize}` : ""} `}
-    >
+    <div className="input-group-lg">
       <label className="mb-12 form-label">
         {label} {required ? "*" : ""}
       </label>
@@ -37,7 +36,7 @@ export const InputField = ({
           type={showPassword ? "text" : type}
           className={`form-control ${
             iconImage ? "border border-start-0" : ""
-          } `}
+          }  }`}
           required={required}
           name={name}
           placeholder={placeholder}

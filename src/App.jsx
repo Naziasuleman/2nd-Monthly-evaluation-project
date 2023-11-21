@@ -13,7 +13,7 @@ import {
 } from "@pages/Authentication";
 import { Dashboard } from "@pages/User";
 import { Settings, Account, Password } from "@pages/Settings";
-import { AddCompany, Companies } from "@pages/Companies";
+import { AddCompany, EditCompany, Companies } from "@pages/Companies";
 
 export const App = () => {
   const isAuthenticated = false;
@@ -38,6 +38,7 @@ export const App = () => {
               <Route index path="/dashboard" element={<Dashboard />} />
               <Route index path="/companies" element={<Companies />} />
               <Route index path="/AddCompany" element={<AddCompany />} />
+              <Route index path="/editCompany" element={<EditCompany />} />
               <Route path="/settings/*" element={<Settings />}>
                 <Route path="account" element={<Account />} />
                 <Route path="changepassword" element={<Password />} />

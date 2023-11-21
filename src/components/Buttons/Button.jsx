@@ -18,7 +18,7 @@ export const Button = ({
       width={width}
       disabled={disabled}
     >
-      {iconSrc && <img src={iconSrc} alt="Icon" className="btn-icon" />}
+      {iconSrc && <img src={iconSrc} alt="Icon" className="btn-icon " />}
       {text}
     </button>
   );

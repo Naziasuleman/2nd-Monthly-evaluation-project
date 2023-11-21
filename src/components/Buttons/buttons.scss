@@ -4,6 +4,12 @@
   width: 100%;
 }
 
+.w-80 {
+  width: 80%;
+}
+.h-50 {
+  height: 54px;
+}
 .btn {
   &-tertiary {
     color: $primary-500;
@@ -15,6 +21,22 @@
   }
 
   &-seconday {
+    background-color: $white;
+    color: $black;
+    font-size: 14px;
+    border: 1px solid $gray-200;
+    font-weight: 500;
+
+    &:hover {
+      color: $primary-500;
+      border: 1px solid $primary-500;
+      background-color: $white;
+    }
+    &:active {
+      background-color: $white;
+    }
+  }
+  &-secondary {
     background-color: $white;
     color: $black;
     font-size: 14px;

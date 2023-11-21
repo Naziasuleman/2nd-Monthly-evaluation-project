@@ -1,8 +1,8 @@
 // Companies.js
-
 import { Header } from "@components";
 import { CompanyAvatar, Email, Phone, Edit, Delete, View } from "@images";
 import { CompanyData } from "./CompanyData";
+import { Link } from "react-router-dom";
 
 export const Companies = () => {
   return (
@@ -53,7 +53,9 @@ export const Companies = () => {
                       {company.taxRegistration}
                     </p>
                     <div className="d-flex gap-12">
-                      <img src={Edit} alt="Edit Icon" />
+                      <Link to="/editcompany">
+                        <img src={Edit} alt="Edit Icon" />
+                      </Link>
                       <img src={Delete} alt="Delete Icon" />
                       <img src={View} alt="View Icon" />
                     </div>

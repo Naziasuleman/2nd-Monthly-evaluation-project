@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@components";
 import { InputField } from "@components/index";
 import { useState } from "react";
-
-export const AddCompany = () => {
+export const EditCompany = () => {
   const [showAddressForm, setShowAddressForm] = useState(false);
 
   const handleAddAddressClick = () => {
@@ -22,7 +21,7 @@ export const AddCompany = () => {
             <Link to="/companies">
               <img src={Back} alt="back" />
             </Link>
-            <h4 className="fs-28 fw-bold">Add Company</h4>
+            <h4 className="fs-28 fw-bold">Edit Company</h4>
           </div>
         </div>
       </header>
@@ -58,7 +57,7 @@ export const AddCompany = () => {
                   label="Company Name"
                   type="text"
                   name="company name"
-                  defaultValue=""
+                  defaultValue="ABC Company"
                   disabled={false}
                   required
                 />
@@ -66,7 +65,7 @@ export const AddCompany = () => {
                   label="Tax Registration Number"
                   type="text"
                   name="Tax number"
-                  defaultValue=""
+                  defaultValue="123-45-8475"
                   disabled={false}
                 />
               </div>
@@ -75,14 +74,14 @@ export const AddCompany = () => {
                   label="Email"
                   type="email"
                   name="email"
-                  defaultValue=""
+                  defaultValue="company@example.com"
                   disabled={false}
                 />
                 <InputField
                   label="Phone Number"
                   type="text"
                   name="Phone number"
-                  defaultValue=""
+                  defaultValue="(206) 342-8631"
                   disabled={false}
                 />
               </div>
@@ -179,7 +178,6 @@ export const AddCompany = () => {
                     type="button"
                     className="btn-primary mt-28 "
                   />
-
                   <Button
                     text="Cancel"
                     type="button"
@@ -206,7 +204,9 @@ export const AddCompany = () => {
           <Link to="/companies">
             <Button text="Cancel" type="button" className="btn btn-seconday " />
           </Link>
-          <Button text="Add Company" type="button" className="btn-primary" />
+          <Link to="/companies">
+            <Button text="Save Company" type="button" className="btn-primary" />
+          </Link>
         </div>
       </div>
     </>
