@@ -14,7 +14,7 @@ import {
 import { Dashboard } from "@pages/User";
 import { Settings, Account, Password } from "@pages/Settings";
 import { AddCompany, EditCompany, Companies } from "@pages/Companies";
-import { AdminDashboard } from "@pages/Admin";
+import { AdminDashboard, AdminUser } from "@pages/Admin";
 
 export const App = () => {
   return (
@@ -40,6 +40,7 @@ export const App = () => {
               <Route path="*" element={<Navigate to="account" />} />
             </Route>
             <Route path="/dashboard" element={<AdminDashboard />} />
+            <Route path="/users" element={<AdminUser />} />
           </Route>
         </>
       </Routes>
