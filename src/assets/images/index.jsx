@@ -30,3 +30,6 @@ export { default as Back } from "./back.svg";
 export { default as UploadLogo } from "./uploadlogo.png";
 export { default as Arrowup } from "./uparrow.svg";
 export { default as Filter } from "./filter.svg";
+export { default as Profile } from "./userImage.svg";
+export { default as Threedots } from "./threedots.svg";
+export { default as Users } from "./users.svg";

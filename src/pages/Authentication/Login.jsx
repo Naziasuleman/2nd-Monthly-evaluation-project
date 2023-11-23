@@ -46,11 +46,17 @@ export const Login = () => {
               <span>Remember Me</span>
             </label>
           </div>
-          <Link
-            to={`/forgot-password`}
-            className="btn text-primary-500 btn-sm "
-          >
-            Forgot Password?
+          <Link to={`/forgot-password`}>
+            <Button
+              text="Forgot Password?"
+              type="button"
+              width="100%"
+              className="btn-tertiary btn-tertiary:active fs-14 w-100 "
+              onClick={() => {
+                // Add your logic for handling the button click here
+                console.log("Button Clicked!");
+              }}
+            />
           </Link>
         </div>
         <Button

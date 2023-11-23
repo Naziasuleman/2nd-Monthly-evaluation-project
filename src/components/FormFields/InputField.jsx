@@ -22,8 +22,8 @@ export const InputField = ({
   };
 
   return (
-    <div className="input-group-lg">
-      <label className="mb-12 form-label">
+    <div className={`input-group-lg d-flex flex-column ${label ? "mb-2" : ""}`}>
+      <label className="form-label">
         {label} {required ? "*" : ""}
       </label>
       <div className="input-group">

@@ -44,7 +44,7 @@ export const Account = () => {
                   )}
                 </div>
               </div>
-              <div className="w-100 mw-460">
+              <div className="w-100 mw-460 d-flex flex-column gap-2">
                 <InputField
                   label="Full Name"
                   type="text"

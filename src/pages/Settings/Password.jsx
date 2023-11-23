@@ -7,7 +7,7 @@ export const Password = () => {
           <h5 className="text-gray-900 fw-bold mb-28 px-4 mt-5">Password</h5>
           <form>
             <div className="d-flex gap-4 px-4">
-              <div className="w-100 mw-460">
+              <div className="w-100 mw-460 d-flex flex-column gap-2">
                 <InputField
                   label="Current Password"
                   type="Password"

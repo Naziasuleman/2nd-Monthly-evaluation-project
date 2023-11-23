@@ -27,7 +27,7 @@ export const App = () => {
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/signup" element={<Signup />} />
           </Route>
-          <Route path="/admin" element={<AdminLogin />} />
+          <Route path="/adminlogin" element={<AdminLogin />} />
 
           <Route element={<UserLayout />}>
             <Route index path="/*" element={<Dashboard />} />

@@ -30,8 +30,8 @@
   border: 1px solid #bf3947;
   background-color: #fff;
 }
-.btn-seconday:active {
-  background-color: #fff;
+.btn-seconday:hover img {
+  filter: invert(27%) sepia(20%) saturate(5641%) hue-rotate(328deg) brightness(96%) contrast(86%);
 }
 .btn-secondary {
   background-color: #fff;

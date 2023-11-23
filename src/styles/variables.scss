@@ -1209,9 +1209,9 @@ $navbar-light-active-color: $primary !default;
 // $dropdown-padding-y:                .5rem !default;
 // $dropdown-spacer:                   .125rem !default;
 // $dropdown-font-size:                $font-size-base !default;
-// $dropdown-color:                    $body-color !default;
-// $dropdown-bg:                       $white !default;
-// $dropdown-border-color:             var(--#{$prefix}border-color-translucent) !default;
+$dropdown-color: $body-color !default;
+$dropdown-bg: $white !default;
+$dropdown-border-color: $gray-100 !default;
 // $dropdown-border-radius:            $border-radius !default;
 // $dropdown-border-width:             $border-width !default;
 // $dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width) !default;
@@ -1219,12 +1219,12 @@ $navbar-light-active-color: $primary !default;
 // $dropdown-divider-margin-y:         $spacer * .5 !default;
 // $dropdown-box-shadow:               $box-shadow !default;
 
-// $dropdown-link-color:               $gray-900 !default;
-// $dropdown-link-hover-color:         shade-color($dropdown-link-color, 10%) !default;
-// $dropdown-link-hover-bg:            $gray-200 !default;
+$dropdown-link-color: $gray-900 !default;
+$dropdown-link-hover-color: shade-color($dropdown-link-color, 10%) !default;
+$dropdown-link-hover-bg: $gray-200 !default;
 
-// $dropdown-link-active-color:        $component-active-color !default;
-// $dropdown-link-active-bg:           $component-active-bg !default;
+$dropdown-link-active-color: $gray-100 !default;
+$dropdown-link-active-bg: $gray-200 !default;
 
 // $dropdown-link-disabled-color:      $gray-500 !default;
 
@@ -1448,10 +1448,11 @@ $card-border-radius: $border-radius-lg !default;
 // // scss-docs-start badge-variables
 // $badge-font-size:                   .75em !default;
 // $badge-font-weight:                 $font-weight-bold !default;
-// $badge-color:                       $white !default;
-// $badge-padding-y:                   .35em !default;
-// $badge-padding-x:                   .65em !default;
-// $badge-border-radius:               $border-radius !default;
+$badge-color: $success-500 !default;
+$badge-padding-y: 0.35em !default;
+
+$badge-border-radius: 40px !default;
+
 // // scss-docs-end badge-variables
 
 // // Modals
@@ -1665,9 +1666,9 @@ $modal-lg: 730px !default;
 // // Offcanvas
 
 // // scss-docs-start offcanvas-variables
-$offcanvas-padding-y: 16px !default;
+$offcanvas-padding-y: 20px !default;
 $offcanvas-padding-x: 21px !default;
-$offcanvas-horizontal-width: 280px !default;
+$offcanvas-horizontal-width: 400px !default;
 // $offcanvas-vertical-height:         30vh !default;
 // $offcanvas-transition-duration:     .3s !default;
 // $offcanvas-border-color:            $modal-content-border-color !default;
