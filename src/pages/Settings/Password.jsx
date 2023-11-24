@@ -14,6 +14,7 @@ export const Password = () => {
                   name="Password"
                   defaultValue=""
                   disabled={false}
+                  labelFontSize="fs-14"
                   required
                 />
                 <InputField
@@ -22,6 +23,7 @@ export const Password = () => {
                   name="Password"
                   defaultValue=""
                   disabled={false}
+                  labelFontSize="fs-14"
                   required
                 />
                 <InputField
@@ -30,20 +32,22 @@ export const Password = () => {
                   name="Password"
                   defaultValue=""
                   disabled={false}
+                  labelFontSize="fs-14"
                   required
                 />
 
-                <Button
-                  text="Change Password"
-                  type="submit"
-                  width={30}
-                  className="btn-primary mt-12 "
-                  onClick={() => {
-                    // Add your logic for handling the button click here
-                    console.log("Button Clicked!");
-                  }}
-                  disabled={true}
-                />
+                <div>
+                  <Button
+                    text="Change Password"
+                    type="submit"
+                    className="btn-sm btn-primary mt-12 fw-600"
+                    onClick={() => {
+                      // Add your logic for handling the button click here
+                      console.log("Button Clicked!");
+                    }}
+                    disabled={true}
+                  />
+                </div>
               </div>
             </div>
           </form>

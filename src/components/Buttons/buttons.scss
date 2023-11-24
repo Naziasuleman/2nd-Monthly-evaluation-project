@@ -20,37 +20,18 @@
     }
   }
 
-  &-seconday {
-    background-color: $white;
+  &-secondary {
+    background-color: $white !important;
     color: $black;
-    font-size: 14px;
     border: 1px solid $gray-200;
-    font-weight: 500;
-
     &:hover {
-      color: $primary-500;
-      border: 1px solid $primary-500;
-      background-color: $white;
+      color: $primary-500 !important;
+      border: 1px solid $primary-500 !important;
+      background-color: $white !important;
       & img {
         filter: invert(27%) sepia(20%) saturate(5641%) hue-rotate(328deg)
           brightness(96%) contrast(86%);
       }
-    }
-  }
-  &-secondary {
-    background-color: $white;
-    color: $black;
-    font-size: 14px;
-    border: 1px solid $gray-200;
-    font-weight: 500;
-
-    &:hover {
-      color: $primary-500;
-      border: 1px solid $primary-500;
-      background-color: $white;
-    }
-    &:active {
-      background-color: $white;
     }
   }
 }

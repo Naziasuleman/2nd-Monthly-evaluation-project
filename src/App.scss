@@ -90,6 +90,9 @@
 .bg-danger-500 {
   background-color: $danger-500;
 }
+.bg-danger-50 {
+  background-color: $danger-50;
+}
 // font weight
 .fw-800 {
   font-weight: 800;
@@ -143,6 +146,12 @@
 }
 
 // width start
+.minw-50 {
+  min-width: 50%;
+}
+.minw-60 {
+  min-width: 60%;
+}
 .mw-460 {
   max-width: 460px;
 }
@@ -168,10 +177,13 @@
 }
 
 .w-50 {
-  width: 50px;
+  width: 50%;
 }
 .w-10 {
   width: 10px;
+}
+.w-30 {
+  width: 40%;
 }
 
 .h-40 {
@@ -195,7 +207,8 @@
 
 .table {
   margin: 0px !important;
-  border-radius: 10px;
+  border: none;
+  border-radius: 8px;
 
   tr {
     border: 1px solid $gray-200;
@@ -241,13 +254,14 @@
 }
 
 //badge
-.badge {
-  &-primary {
-    border: 1px solid $success-100 !important;
-  }
-  &-secondary {
-    border: 1px solid $success-100 !important;
-  }
+.badge-active {
+  border: 1px solid $success-100 !important;
+  color: $success-500 !important;
+}
+//badge
+.badge-inactive {
+  border: 1px solid $danger-200 !important;
+  color: $danger-500;
 }
 
 @media screen and (max-width: 992px) {

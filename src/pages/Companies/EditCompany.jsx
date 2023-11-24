@@ -48,7 +48,7 @@ export const EditCompany = () => {
                   <Button
                     text="Upload Logo"
                     type="button"
-                    className="btn-seconday mt-12 px-2"
+                    className="btn-sm btn-seconday mt-12 px-2"
                   />
                 </div>
               </div>
@@ -59,6 +59,7 @@ export const EditCompany = () => {
                   name="company name"
                   defaultValue="ABC Company"
                   disabled={false}
+                  labelFontSize="fs-14"
                   required
                 />
                 <InputField
@@ -66,6 +67,7 @@ export const EditCompany = () => {
                   type="text"
                   name="Tax number"
                   defaultValue="123-45-8475"
+                  labelFontSize="fs-14"
                   disabled={false}
                 />
               </div>
@@ -75,6 +77,7 @@ export const EditCompany = () => {
                   type="email"
                   name="email"
                   defaultValue="company@example.com"
+                  labelFontSize="fs-14"
                   disabled={false}
                 />
                 <InputField
@@ -82,6 +85,7 @@ export const EditCompany = () => {
                   type="text"
                   name="Phone number"
                   defaultValue="(206) 342-8631"
+                  labelFontSize="fs-14"
                   disabled={false}
                 />
               </div>
@@ -93,6 +97,7 @@ export const EditCompany = () => {
                   defaultValue=""
                   disabled={false}
                   iconImage={Search}
+                  labelFontSize="fs-14"
                   placeholder="Search locations"
                 />
               </div>
@@ -112,6 +117,7 @@ export const EditCompany = () => {
                   type="text"
                   name="contact name"
                   defaultValue=""
+                  labelFontSize="fs-14"
                   disabled={false}
                 />
                 <InputField
@@ -119,6 +125,7 @@ export const EditCompany = () => {
                   type="text"
                   name="phone number"
                   defaultValue=""
+                  labelFontSize="fs-14"
                   disabled={false}
                 />
               </div>
@@ -130,6 +137,7 @@ export const EditCompany = () => {
                   name="address"
                   defaultValue=""
                   disabled={false}
+                  labelFontSize="fs-14"
                   placeholder="Search locations"
                 />
               </div>
@@ -162,6 +170,7 @@ export const EditCompany = () => {
                     label="Title"
                     type="text"
                     name="Title"
+                    labelFontSize="fs-14"
                     defaultValue=""
                     disabled={false}
                   />
@@ -170,18 +179,19 @@ export const EditCompany = () => {
                     type="text"
                     name="address"
                     defaultValue=""
+                    labelFontSize="fs-14"
                     disabled={false}
                   />
 
                   <Button
                     text="Add "
                     type="button"
-                    className="btn-primary mt-28 "
+                    className="btn-sm btn-primary mt-28 "
                   />
                   <Button
                     text="Cancel"
                     type="button"
-                    className="btn-tertiary mt-28 "
+                    className="btn-sm btn-tertiary mt-28 "
                     onClick={handleCancelClick}
                   />
                 </div>
@@ -191,7 +201,7 @@ export const EditCompany = () => {
                   <Button
                     text="Add Address"
                     type="button"
-                    className="btn-seconday px-2 w-30 d-flex gap-1"
+                    className="btn-sm btn-secondary px-2 w-30 d-flex gap-1"
                     iconSrc={Plus2}
                     onClick={handleAddAddressClick}
                   />
@@ -202,7 +212,11 @@ export const EditCompany = () => {
         </div>
         <div className="d-flex justify-content-end gap-1 mb-32">
           <Link to="/companies">
-            <Button text="Cancel" type="button" className="btn btn-seconday " />
+            <Button
+              text="Cancel"
+              type="button"
+              className="btn btn-secondary "
+            />
           </Link>
           <Link to="/companies">
             <Button text="Save Company" type="button" className="btn-primary" />

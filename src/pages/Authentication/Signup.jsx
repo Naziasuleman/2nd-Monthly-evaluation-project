@@ -77,7 +77,7 @@ export const Signup = () => {
           text="Sign Up"
           type="submit"
           width="100%"
-          className="btn-primary mt-12 w-100"
+          className="btn-lg btn-primary mt-12 w-100"
           onClick={() => {
             // Add your logic for handling the button click here
             console.log("Button Clicked!");

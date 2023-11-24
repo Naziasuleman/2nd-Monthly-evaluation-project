@@ -12,6 +12,7 @@ export const InputField = ({
   disabled,
   iconImage,
   placeholder,
+  labelFontSize, // Change labelFontSize prop to accept class names
 
   // Add inputGroupSize prop
 }) => {
@@ -22,8 +23,8 @@ export const InputField = ({
   };
 
   return (
-    <div className={`input-group-lg d-flex flex-column ${label ? "mb-2" : ""}`}>
-      <label className="form-label">
+    <div className={`input-group d-flex flex-column ${label ? "mb-2" : ""}`}>
+      <label className={`form-label ${labelFontSize}`}>
         {label} {required ? "*" : ""}
       </label>
       <div className="input-group">
@@ -65,5 +66,6 @@ InputField.propTypes = {
   disabled: PropTypes.bool,
   iconImage: PropTypes.string,
   inputGroupSize: PropTypes.string,
-  placeholder: PropTypes.string, // Define prop type for inputGroupSize
+  placeholder: PropTypes.string,
+  labelFontSize: PropTypes.string, // Accept class names for labelFontSize
 };

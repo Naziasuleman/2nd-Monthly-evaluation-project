@@ -34,7 +34,7 @@ export const Header = ({ title }) => {
                   <Button
                     text="Add New"
                     type="button"
-                    className="btn-primary w-30 d-flex gap-1 "
+                    className="btn-primary w-100 d-flex gap-2 "
                     iconSrc={Plus}
                   />
                 </Link>
@@ -44,7 +44,7 @@ export const Header = ({ title }) => {
                   <Button
                     text="Filter"
                     type="button"
-                    className="btn-seconday w-30 d-flex flex-row-reverse gap-1 "
+                    className="btn btn-secondary d-flex flex-row-reverse gap-2 fw-500"
                     iconSrc={Filter}
                     onClick={toggleShow}
                   />

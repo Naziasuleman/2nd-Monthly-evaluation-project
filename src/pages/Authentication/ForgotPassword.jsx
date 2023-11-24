@@ -23,7 +23,7 @@ export const ForgotPassword = () => {
           text="Send Email"
           type="submit"
           width="100%"
-          className="btn-primary mt-12 w-100"
+          className="btn-lg btn-primary mt-12 w-100"
           onClick={() => {
             // Add your logic for handling the button click here
             console.log("Button Clicked!");
@@ -35,7 +35,7 @@ export const ForgotPassword = () => {
           text="Back to Login"
           type="button"
           width="100%"
-          className="btn-tertiary btn-tertiary:active mt-20 w-100 "
+          className="btn-lg btn-tertiary btn-tertiary:active mt-20 w-100 "
           onClick={() => {
             // Add your logic for handling the button click here
             console.log("Button Clicked!");

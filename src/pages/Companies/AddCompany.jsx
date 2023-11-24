@@ -1,15 +1,30 @@
 import { Back, UploadLogo, Search, Plus2 } from "@images";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@components";
-import { InputField } from "@components/index";
-import { useState } from "react";
+import { InputField, ModalSuccess } from "@components";
+import { useState, useEffect } from "react";
 
 export const AddCompany = () => {
+  const navigate = useNavigate();
   const [showAddressForm, setShowAddressForm] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
 
   const handleAddAddressClick = () => {
-    // Set the state to true when the button is clicked
     setShowAddressForm(true);
+  };
+  useEffect(() => {
+    if (modalShow) {
+      const timeoutId = setTimeout(() => {
+        setModalShow(false);
+      }, 3000);
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [modalShow]);
+
+  const handleModalHide = () => {
+    setModalShow(false);
+    navigate("/companies");
   };
   const handleCancelClick = () => {
     setShowAddressForm(false);
@@ -30,7 +45,7 @@ export const AddCompany = () => {
         style={{
           marginRight: "24px",
         }}
-        className="container-fluid"
+        className="container-fluid "
       >
         <div>
           <div className="row px-4 py-4 gap-32 border border-top-0 border-start-0 border-end-0 border-bottom">
@@ -49,7 +64,7 @@ export const AddCompany = () => {
                   <Button
                     text="Upload Logo"
                     type="button"
-                    className="btn-seconday mt-12 px-2"
+                    className="btn-secondary btn-sm mt-12 "
                   />
                 </div>
               </div>
@@ -60,6 +75,7 @@ export const AddCompany = () => {
                   name="company name"
                   defaultValue=""
                   disabled={false}
+                  labelFontSize="fs-14"
                   required
                 />
                 <InputField
@@ -67,6 +83,7 @@ export const AddCompany = () => {
                   type="text"
                   name="Tax number"
                   defaultValue=""
+                  labelFontSize="fs-14"
                   disabled={false}
                 />
               </div>
@@ -76,6 +93,7 @@ export const AddCompany = () => {
                   type="email"
                   name="email"
                   defaultValue=""
+                  labelFontSize="fs-14"
                   disabled={false}
                 />
                 <InputField
@@ -83,6 +101,7 @@ export const AddCompany = () => {
                   type="text"
                   name="Phone number"
                   defaultValue=""
+                  labelFontSize="fs-14"
                   disabled={false}
                 />
               </div>
@@ -94,6 +113,7 @@ export const AddCompany = () => {
                   defaultValue=""
                   disabled={false}
                   iconImage={Search}
+                  labelFontSize="fs-14"
                   placeholder="Search locations"
                 />
               </div>
@@ -113,6 +133,7 @@ export const AddCompany = () => {
                   type="text"
                   name="contact name"
                   defaultValue=""
+                  labelFontSize="fs-14"
                   disabled={false}
                 />
                 <InputField
@@ -120,6 +141,7 @@ export const AddCompany = () => {
                   type="text"
                   name="phone number"
                   defaultValue=""
+                  labelFontSize="fs-14"
                   disabled={false}
                 />
               </div>
@@ -131,6 +153,7 @@ export const AddCompany = () => {
                   name="address"
                   defaultValue=""
                   disabled={false}
+                  labelFontSize="fs-14"
                   placeholder="Search locations"
                 />
               </div>
@@ -165,6 +188,7 @@ export const AddCompany = () => {
                     name="Title"
                     defaultValue=""
                     disabled={false}
+                    labelFontSize="fs-14"
                   />
                   <InputField
                     label="Address"
@@ -172,28 +196,29 @@ export const AddCompany = () => {
                     name="address"
                     defaultValue=""
                     disabled={false}
+                    labelFontSize="fs-14"
                   />
 
                   <Button
                     text="Add "
                     type="button"
-                    className="btn-primary mt-28 "
+                    className="btn-sm btn-primary mt-28 "
                   />
 
                   <Button
                     text="Cancel"
                     type="button"
-                    className="btn-tertiary mt-28 "
+                    className="btn-sm btn-tertiary mt-28 "
                     onClick={handleCancelClick}
                   />
                 </div>
               ) : (
                 // Render the "Add Address" button when showAddressForm is false
-                <div className="d-flex flex-column flex-sm-row align-items-sm-center  gap-3">
+                <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3">
                   <Button
                     text="Add Address"
                     type="button"
-                    className="btn-seconday px-2 w-30 d-flex gap-1"
+                    className="btn-secondary px-3 d-flex gap-1"
                     iconSrc={Plus2}
                     onClick={handleAddAddressClick}
                   />
@@ -204,9 +229,19 @@ export const AddCompany = () => {
         </div>
         <div className="d-flex justify-content-end gap-1 mb-32">
           <Link to="/companies">
-            <Button text="Cancel" type="button" className="btn btn-seconday " />
+            <Button text="Cancel" type="button" className="btn-secondary " />
           </Link>
-          <Button text="Add Company" type="button" className="btn-primary" />
+
+          <Button
+            text="Add Company"
+            type="button"
+            className="btn-primary "
+            onClick={() => {
+              setModalShow(true);
+            }}
+          />
+
+          <ModalSuccess show={modalShow} onHide={handleModalHide} />
         </div>
       </div>
     </>

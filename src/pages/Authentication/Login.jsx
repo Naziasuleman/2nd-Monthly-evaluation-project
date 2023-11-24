@@ -51,7 +51,7 @@ export const Login = () => {
               text="Forgot Password?"
               type="button"
               width="100%"
-              className="btn-tertiary btn-tertiary:active fs-14 w-100 "
+              className="btn-sm btn-tertiary btn-tertiary:active fs-14 w-100 "
               onClick={() => {
                 // Add your logic for handling the button click here
                 console.log("Button Clicked!");
@@ -63,7 +63,7 @@ export const Login = () => {
           text="Login"
           type="submit"
           width="100%"
-          className="btn-primary mt-12 w-100"
+          className="btn-lg btn-primary mt-12 w-100"
           onClick={() => {
             // Add your logic for handling the button click here
             console.log("Button Clicked!");

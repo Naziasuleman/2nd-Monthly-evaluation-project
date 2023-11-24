@@ -8,3 +8,5 @@ export { Tabs } from "./Tabs";
 export { FilterOffcanvas } from "./FilterOffcanvas";
 export { SideBarOffcanvas } from "./SideBar/SideBarOffcanvas";
 export { ViewCompanyOffcanvas } from "./ViewCompanyOffcanvas";
+export { ModalSuccess } from "./ModalSuccess";
+export { ModalDelete } from "./ModalDelete";

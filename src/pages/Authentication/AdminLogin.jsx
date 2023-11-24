@@ -56,18 +56,20 @@ export const AdminLogin = () => {
                     <span>Remember Me</span>
                   </label>
                 </div>
-                <Link
-                  to={`/forgot-password`}
-                  className="btn text-primary-500 btn-sm "
-                >
-                  Forgot Password?
+
+                <Link to={`/forgot-password`}>
+                  <Button
+                    className="btn-tertiary btn-tertiary:active btn-sm "
+                    type="button"
+                    text="Forgot Password?"
+                  />
                 </Link>
               </div>
               <Button
                 text="Login"
                 type="submit"
                 width="100%"
-                className="btn-primary mt-12 w-100"
+                className="btn-lg btn-primary mt-12 w-100"
                 onClick={() => {
                   // Add your logic for handling the button click here
                   console.log("Button Clicked!");

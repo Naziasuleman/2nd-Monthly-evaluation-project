@@ -44,12 +44,12 @@ export const FilterOffcanvas = ({ show, handleClose, handleApplyFilter }) => {
           <Button
             text="Reset Filter"
             type="button"
-            className="btn-seconday w-30 w-100 "
+            className="btn-lg btn-secondary w-30 w-100 fw-500"
           />
           <Button
             text="Apply Filter"
             type="button"
-            className="btn-primary w-30 w-100 "
+            className="btn-lg btn-primary w-30 w-100 fw-500"
             onClick={handleApplyFilter}
           />
         </div>

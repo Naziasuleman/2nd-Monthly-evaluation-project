@@ -33,3 +33,5 @@ export { default as Filter } from "./filter.svg";
 export { default as Profile } from "./userImage.svg";
 export { default as Threedots } from "./threedots.svg";
 export { default as Users } from "./users.svg";
+export { default as Success } from "./success.svg";
+export { default as Deleteicon } from "./exclaim.svg";

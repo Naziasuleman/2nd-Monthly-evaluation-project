@@ -8,7 +8,7 @@ export const AdminUserData = [
     createdAt: "27 Oct, 10:49 AM",
     email: "dustin.wilson@example.com",
     phone: "(405) 555-0128",
-    status: "active",
+    status: true,
   },
   {
     profile: Profile,
@@ -16,7 +16,7 @@ export const AdminUserData = [
     createdAt: "27 Oct, 10:49 AM",
     email: "dustin.wilson@example.com",
     phone: "(405) 555-0128",
-    status: "Active",
+    status: false,
   },
   {
     profile: Profile,
@@ -24,6 +24,6 @@ export const AdminUserData = [
     createdAt: "27 Oct, 10:49 AM",
     email: "dustin.wilson@example.com",
     phone: "(405) 555-0128",
-    status: "Inactive",
+    status: true,
   },
 ];

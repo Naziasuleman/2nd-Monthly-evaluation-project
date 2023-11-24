@@ -1,16 +1,19 @@
 // Companies.js
-import { Header } from "@components";
 import { useState } from "react";
 import { CompanyAvatar, Email, Phone, Edit, Delete, View } from "@images";
 import { CompanyData } from "./CompanyData";
 import { Link } from "react-router-dom";
-import { ViewCompanyOffcanvas, Button } from "@components";
+import { ViewCompanyOffcanvas, Button, ModalDelete, Header } from "@components";
 
 export const Companies = () => {
   const [show, setShow] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const toggleShow = () => setShow((s) => !s);
+  const handleModalHide = () => {
+    setModalShow(false);
+  };
   return (
     <>
       <Header title="Companies" />
@@ -21,7 +24,7 @@ export const Companies = () => {
             margin: "24px",
           }}
         >
-          <table className="table ">
+          <table className="table table-hover border-0">
             <thead>
               <tr>
                 <th>Company Name</th>
@@ -32,7 +35,7 @@ export const Companies = () => {
             <tbody>
               {CompanyData.map((company, index) => (
                 <tr key={index} className="border-bottom">
-                  <td className="d-flex gap-3 align-items-center ">
+                  <td className="d-flex gap-3 align-items-center border-0">
                     <img src={CompanyAvatar} alt="Company Avatar" />
                     <div className="d-flex flex-column border-0">
                       <p className="company-name">{company.companyName}</p>
@@ -72,8 +75,14 @@ export const Companies = () => {
                           iconSrc={Delete}
                           type="button"
                           className="btn-tertiary btn-tertiary:active fs-14  px-0"
+                          onClick={() => {
+                            setModalShow(true);
+                          }}
                         />
-
+                        <ModalDelete
+                          show={modalShow}
+                          onHide={handleModalHide}
+                        />
                         <Button
                           type="button"
                           className=" btn-tertiary btn-tertiary:active cursor-pointer px-0 border-none"
