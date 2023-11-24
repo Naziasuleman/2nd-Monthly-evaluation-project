@@ -105,7 +105,7 @@ export const AddCompany = () => {
                   disabled={false}
                 />
               </div>
-              <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3 ">
+              <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3 w-50">
                 <InputField
                   label="Company Address"
                   type="text"
@@ -146,7 +146,7 @@ export const AddCompany = () => {
                 />
               </div>
 
-              <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3 ">
+              <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3 w-50">
                 <InputField
                   label="Billing Address"
                   type="text"

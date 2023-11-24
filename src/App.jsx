@@ -4,7 +4,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import { AuthLayout, UserLayout } from "@layouts";
+import { AuthLayout, UserLayout, AdminLayout } from "@layouts";
 import {
   ForgotPassword,
   Login,
@@ -39,6 +39,9 @@ export const App = () => {
               <Route path="changepassword" element={<Password />} />
               <Route path="*" element={<Navigate to="account" />} />
             </Route>
+          </Route>
+          <Route element={<AdminLayout />}>
+            <Route index path="/*" element={<Dashboard />} />
             <Route path="/dashboard" element={<AdminDashboard />} />
             <Route path="/users" element={<AdminUser />} />
           </Route>

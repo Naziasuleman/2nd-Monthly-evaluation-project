@@ -89,7 +89,7 @@ export const EditCompany = () => {
                   disabled={false}
                 />
               </div>
-              <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3 ">
+              <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3 w-50">
                 <InputField
                   label="Company Address"
                   type="text"
@@ -130,7 +130,7 @@ export const EditCompany = () => {
                 />
               </div>
 
-              <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3 ">
+              <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3 w-50">
                 <InputField
                   label="Billing Address"
                   type="text"
@@ -197,11 +197,11 @@ export const EditCompany = () => {
                 </div>
               ) : (
                 // Render the "Add Address" button when showAddressForm is false
-                <div className="d-flex flex-column flex-sm-row align-items-sm-center  gap-3">
+                <div className="d-flex flex-column flex-sm-row align-items-sm-center gap-3">
                   <Button
                     text="Add Address"
                     type="button"
-                    className="btn-sm btn-secondary px-2 w-30 d-flex gap-1"
+                    className="btn-secondary px-3 d-flex gap-1"
                     iconSrc={Plus2}
                     onClick={handleAddAddressClick}
                   />

@@ -15,7 +15,7 @@ export const sidebarData = [
   { id: 2, icon: Task, text: "Tasks" },
   { id: 3, icon: Calendar, text: "Calendar" },
   { id: 4, icon: Trips, text: "Trips" },
-  { id: 4, icon: Users, text: "Users" },
+  { id: 8, icon: Users, text: "Users" },
 ];
 
 export const companiesData = [{ id: 5, icon: Companies, text: "Companies" }];
