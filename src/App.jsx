@@ -38,8 +38,8 @@ function App() {
       path: "/",
       element: <UserLayout />,
       children: [
-        { path: "*", element: <Navigate to="/userpanel" /> },
-        { path: "/userpanel", element: <Dashboard /> },
+        { path: "*", element: <Navigate to="/dashboard" /> },
+        { path: "/dashboard", element: <Dashboard /> },
 
         { path: "settings", element: <Navigate to="account" /> },
         {
@@ -56,7 +56,7 @@ function App() {
       ],
     },
     {
-      path: "/",
+      path: "/admin",
       element: <AdminLayout />,
       children: [
         { path: "*", element: <Navigate to="/dashboard" /> },

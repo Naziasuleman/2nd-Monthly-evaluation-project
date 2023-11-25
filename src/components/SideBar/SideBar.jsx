@@ -78,7 +78,7 @@ export const SideBar = () => {
             <NavLink
               id="navlink"
               key={item.id}
-              to={`/${item.text}`}
+              to={item.link}
               className={`d-flex hover ${
                 collapsed ? "justify-content-center" : "align-items-center"
               }`}
@@ -108,7 +108,7 @@ export const SideBar = () => {
             <NavLink
               id="navlink"
               key={item.id}
-              to={`/${item.text}`}
+              to={item.link}
               className={`d-flex hover ${
                 collapsed ? "justify-content-center" : "align-items-center"
               }`}
@@ -136,7 +136,7 @@ export const SideBar = () => {
             <NavLink
               id="navlink"
               key={item.id}
-              to={`/${item.text}`}
+              to={item.link}
               className={`d-flex hover ${
                 collapsed ? "justify-content-center" : "align-items-center"
               }`}

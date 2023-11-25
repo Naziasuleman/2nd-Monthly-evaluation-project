@@ -33,7 +33,7 @@ export const SideBarOffcanvas = ({ show, handleClose, handleApplyFilter }) => {
               <NavLink
                 id="navlink"
                 key={item.id}
-                to={`/${item.text}`}
+                to={item.link}
                 className="d-flex hover "
                 activeclassname="sidebar-active"
                 onClick={handleClose}
@@ -50,7 +50,7 @@ export const SideBarOffcanvas = ({ show, handleClose, handleApplyFilter }) => {
               <NavLink
                 id="navlink"
                 key={item.id}
-                to={`/${item.text}`}
+                to={item.link}
                 className="hover "
                 activeclassname="sidebar-active"
                 onClick={handleClose}
@@ -67,7 +67,7 @@ export const SideBarOffcanvas = ({ show, handleClose, handleApplyFilter }) => {
               <NavLink
                 id="navlink"
                 key={item.id}
-                to={`/${item.text}`}
+                to={item.link}
                 className="hover "
                 activeclassname="sidebar-active"
                 onClick={handleClose}
