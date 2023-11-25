@@ -55,7 +55,7 @@ export const AddCompany = () => {
                 Add company details to be used while creating trip
               </p>
             </div>
-            <div className="col-12 col-lg-7  d-flex flex-column gap-3">
+            <div className="col-12 col-lg-7 d-flex flex-column gap-3">
               <div className="d-flex flex-column flex-sm-row gap-12 align-items-center">
                 <div>
                   <img src={UploadLogo} alt="alt" />

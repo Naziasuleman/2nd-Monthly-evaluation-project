@@ -13,45 +13,56 @@ export const Signup = () => {
         Please enter the following information to create an account.
       </p>
       <form>
-        <InputField
-          label="Full Name"
-          type="text"
-          name="Full Name"
-          defaultValue=""
-          disabled={false}
-          required
-        />
-        <InputField
-          label="Email"
-          type="email"
-          name="Email"
-          defaultValue=""
-          disabled={false}
-          required
-        />
-        <InputField
-          label="Phone Number"
-          type="text"
-          name="Phone Number"
-          defaultValue=""
-          disabled={false}
-        />
-        <InputField
-          label="Password"
-          type="password"
-          name="Password"
-          defaultValue=""
-          disabled={false}
-          required
-        />
-        <InputField
-          label="Confirm Password"
-          type="password"
-          name="Confirm Password"
-          defaultValue=""
-          disabled={false}
-          required
-        />
+        <div className="mb-12">
+          <InputField
+            label="Full Name"
+            type="text"
+            name="Full Name"
+            defaultValue=""
+            disabled={false}
+            requ
+            ired
+          />
+        </div>
+        <div className="mb-12">
+          <InputField
+            label="Email"
+            type="email"
+            name="Email"
+            defaultValue=""
+            disabled={false}
+            required
+          />
+        </div>
+        <div className="mb-12">
+          <InputField
+            label="Phone Number"
+            type="text"
+            name="Phone Number"
+            defaultValue=""
+            disabled={false}
+          />
+        </div>
+        <div className="mb-12">
+          <InputField
+            label="Password"
+            type="password"
+            name="Password"
+            defaultValue=""
+            disabled={false}
+            required
+          />
+        </div>
+        <div className="mb-12">
+          <InputField
+            label="Confirm Password"
+            type="password"
+            name="Confirm Password"
+            defaultValue=""
+            disabled={false}
+            required
+          />
+        </div>
         <div className="mb-4 fs-14 d-flex gap-2">
           <input
             className="form-check-input"

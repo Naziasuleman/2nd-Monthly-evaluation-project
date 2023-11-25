@@ -13,23 +13,27 @@ export const Login = () => {
         Please login in order to proceed with your account.
       </p>
       <form>
-        <InputField
-          label="Email"
-          type="email"
-          name="Email"
-          defaultValue=""
-          className="mb-12"
-          disabled={false}
-          required
-        />
-        <InputField
-          label="Password"
-          type="password"
-          name="Password"
-          defaultValue=""
-          disabled={false}
-          required
-        />
+        <div className="mb-12">
+          <InputField
+            label="Email"
+            type="email"
+            name="Email"
+            defaultValue=""
+            className="mb-12"
+            disabled={false}
+            required
+          />
+        </div>
+        <div className="mb-12">
+          <InputField
+            label="Password"
+            type="password"
+            name="Password"
+            defaultValue=""
+            disabled={false}
+            required
+          />
+        </div>
 
         <div className="d-flex align-items-center justify-content-between mb-4">
           <div className="fs-14 d-flex gap-2">

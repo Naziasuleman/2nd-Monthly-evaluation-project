@@ -85,7 +85,7 @@ export const Companies = () => {
                         />
                         <Button
                           type="button"
-                          className=" btn-tertiary btn-tertiary:active cursor-pointer px-0 border-none"
+                          className="btn-tertiary cursor-pointer px-0 "
                           iconSrc={View}
                           onClick={toggleShow}
                         />

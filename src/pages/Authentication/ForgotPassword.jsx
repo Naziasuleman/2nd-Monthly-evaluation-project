@@ -11,14 +11,16 @@ export const ForgotPassword = () => {
         password.
       </p>
       <form>
-        <InputField
-          label="Email"
-          type="email"
-          name="Email"
-          defaultValue=""
-          disabled={false}
-          required
-        />
+        <div className="mb-12">
+          <InputField
+            label="Email"
+            type="email"
+            name="Email"
+            defaultValue=""
+            disabled={false}
+            required
+          />
+        </div>
         <Button
           text="Send Email"
           type="submit"

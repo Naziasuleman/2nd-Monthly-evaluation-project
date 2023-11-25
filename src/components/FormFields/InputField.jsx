@@ -23,7 +23,7 @@ export const InputField = ({
   };
 
   return (
-    <div className={`input-group d-flex flex-column ${label ? "mb-2" : ""}`}>
+    <div className={`input-group d-flex flex-column ${label ? "" : ""}`}>
       <label className={`form-label ${labelFontSize}`}>
         {label} {required ? "*" : ""}
       </label>

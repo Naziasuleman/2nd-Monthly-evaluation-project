@@ -1,10 +1,28 @@
 import { Back, UploadLogo, Search, Plus2 } from "@images";
-import { Link } from "react-router-dom";
-import { Button } from "@components";
-import { InputField } from "@components/index";
-import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import {} from "@components";
+import { InputField, Button, ModalSuccess } from "@components";
+import { useState, useEffect } from "react";
+
 export const EditCompany = () => {
+  const navigate = useNavigate();
   const [showAddressForm, setShowAddressForm] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
+
+  useEffect(() => {
+    if (modalShow) {
+      const timeoutId = setTimeout(() => {
+        setModalShow(false);
+      }, 3000);
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [modalShow]);
+
+  const handleModalHide = () => {
+    setModalShow(false);
+    navigate("/companies");
+  };
 
   const handleAddAddressClick = () => {
     // Set the state to true when the button is clicked
@@ -218,9 +236,16 @@ export const EditCompany = () => {
               className="btn btn-secondary "
             />
           </Link>
-          <Link to="/companies">
-            <Button text="Save Company" type="button" className="btn-primary" />
-          </Link>
+
+          <Button
+            text="Save Company"
+            type="button"
+            className="btn-primary"
+            onClick={() => {
+              setModalShow(true);
+            }}
+          />
+          <ModalSuccess show={modalShow} onHide={handleModalHide} />
         </div>
       </div>
     </>
