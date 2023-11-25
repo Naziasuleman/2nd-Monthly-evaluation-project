@@ -1,13 +1,16 @@
 import { Logo, Hamburg } from "@images";
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { showsidebarcanvas } from "../redux/sidebarSlice";
 import { Button, SideBarOffcanvas } from "@components";
 
 export const MobileHeader = () => {
-  const [show, setShow] = useState(false);
+  const dispatch = useDispatch();
+  const opensidebar = useSelector((state) => state.status.opensidebar);
 
-  const handleClose = () => setShow(false);
-  const toggleShow = () => setShow((s) => !s);
+  const handleToggleSidebar = () => {
+    dispatch(showsidebarcanvas());
+  };
   return (
     <div className="border-bottom w-100 py-4 bg-white d-block d-lg-none">
       <div className="container-fluid">
@@ -15,9 +18,12 @@ export const MobileHeader = () => {
           <Button
             className="btn-seconday cursor-pointer border px-2 py-2 ml-16 "
             iconSrc={Hamburg}
-            onClick={toggleShow}
+            onClick={handleToggleSidebar}
           />
-          <SideBarOffcanvas show={show} handleClose={handleClose} />
+          <SideBarOffcanvas
+            show={opensidebar}
+            handleClose={handleToggleSidebar}
+          />
 
           <Link to="/">
             <img src={Logo} alt="Logo" width={160} />

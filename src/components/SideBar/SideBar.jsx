@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import {
   Logo,
@@ -10,13 +9,16 @@ import {
 } from "@images";
 import { Button } from "@components";
 import "../components.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleSidebar } from "../../redux/sidebarSlice";
 import { sidebarData, companiesData, settingsData } from "./SidebarData";
 
 export const SideBar = () => {
-  const [collapsed, setCollapsed] = React.useState(false);
+  const dispatch = useDispatch();
+  const collapsed = useSelector((state) => state.status.collapsed);
 
-  const toggleSidebar = () => {
-    setCollapsed(!collapsed);
+  const handleToggleSidebar = () => {
+    dispatch(toggleSidebar());
   };
 
   return (
@@ -34,7 +36,7 @@ export const SideBar = () => {
           <img
             src={Hamburg}
             className="ml-16 cursor-pointer border py-2 px-6  rounded"
-            onClick={toggleSidebar}
+            onClick={handleToggleSidebar}
           />
           <Link to="/">
             <img

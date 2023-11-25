@@ -5,12 +5,12 @@ export const Tabs = (title) => {
   if (title === "Settings") {
     return (
       <div className="d-flex fs-16">
-        <NavLink to="/settings/account" activeClassName="active-tab">
+        <NavLink to="/settings/account" activeclasscame="active-tab">
           <div className="px-12 py-12" id="tab">
             Account
           </div>
         </NavLink>
-        <NavLink to="/settings/changepassword" activeClassName="active-tab">
+        <NavLink to="/settings/changepassword" activeclassname="active-tab">
           <div className="px-12 py-12" id="tab">
             Password
           </div>
